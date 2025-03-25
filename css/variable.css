@@ -1,0 +1,20 @@
+/* indica que essas variaveis serão definifas em um escopo global */
+/* var() é como usa para chamar */
+:root {
+    /* Background */
+    --bg-color-body: #111;
+    --bg-color-container: #222;
+    --bg-color-buttom-dark-theme: #ebeaea;
+    --font-color: #ebeaea;
+}
+
+[data-theme="light"] {
+    /* Background */
+    --bg-color-body: #9b9a9a;
+    --bg-color-container: #ebeaea;
+    --bg-color-buttom-dark-theme: #ebeaea;
+    /* Font color */
+    --font-color: #222;
+
+
+}

@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/index.css">
     <title>TechConf 2025 - A Revolução da tecnologia</title>
+    <script src="javascript/index.js"></script>
 </head>
-<body>
+<body data-theme="dark">
     <header>
         <h1>SETIF 2025 - A Revolução da tecnologia</h1>
     </header>
     <main>
-        <img src="imagens/foto-fundo-pagina-alternativo.jpg" class="banner" alt="Foto Fundo página">
+        <img src="imagens/banner1.png" class="banner" alt="Foto Fundo página">
         <h2>O evento tech mais esperado do ano! </h2>
         <p>Participe da SETIF de 2025 e descubra as tendências que vão moldar o futuro da tecnologia.</p>
         <p><b>Data:</b> 10 de Outubro de 2025</p>
-        <p><b>Local:</b> IFPR Camputs Paranavaí</p>
+        <p><b>Local:</b> IFPR Campus Paranavaí</p>
         <button class="button">Inscreva-se</button>
         <button class="button">Saiba mais</button>
         
@@ -35,8 +36,14 @@
                 <h3>Workshops Práticos</h3>
                 <p>Aprenda na prática com workshops interativos e dinâmicos.</p>
             </div>
-    
+            <br>
+            <div id="inscritos">
+                <button class="button" onclick="buscarInscritos()">Inscritos</button>
+            </div>
     </main>
-    </div>
+    <button onclick="alterarTema()" class="button-dark-theme" >
+        <img id="icone-alterar-tema" src="imagens/sun.png" alt="Foto icon">
+    </button>
+
 </body>
 </html>
