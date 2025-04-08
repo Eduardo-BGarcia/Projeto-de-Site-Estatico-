@@ -5,24 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
     <title>TechConf 2025 - A Revolução da tecnologia</title>
-    <script src="javascript/index.js"></script>
+    
 </head>
 <body data-theme="dark">
     <header>
-        <h1>SETIF 2025 - A Revolução da tecnologia</h1>
+        <h1 data-i18n="titulo">SETIF 2025 - A Revolução da tecnologia</h1>
+        <button aria-label="Botão de alterar idioma" class="buttonIdioma" onclick="alterarIdioma()">PT/EN</button>
+        <button onclick="alterarTema()" class="button-dark-theme">
+            <img id="icone-alterar-tema" src="imagens/sun-moon-60-60.png" alt="Foto icon">
+        </button>
     </header>
     <main>
         <img src="imagens/banner1.png" class="banner" alt="Foto Fundo página">
-        <h2>O evento tech mais esperado do ano! </h2>
+        <h2 data-i18n="titulo-evento">O evento tech mais esperado do ano! </h2>
         <p>Participe da SETIF de 2025 e descubra as tendências que vão moldar o futuro da tecnologia.</p>
         <p><b>Data:</b> 10 de Outubro de 2025</p>
         <p><b>Local:</b> IFPR Campus Paranavaí</p>
         <button class="button">Inscreva-se</button>
-        <button class="button">Saiba mais</button>
+        <button class="button" id="saiba-mais">Saiba mais</button>
         
         <div class="cards">
             <div class="card">
-                <img src="imagens/foto-materia01.jpg" class="post" alt="foto da noticia 1"/>
+                <img src="imagens/foto-materia01.jpg" class="post" alt="imagem palestrante 1" data-i18n-alt="imagem palestrante"/>
                 <h3>Palestras inspiradoras</h3>
                 <p>Os maiores especialistas do setor discutirão as últimas tendências tecnologicas.</p>
             </div class="card">
@@ -39,11 +43,16 @@
             <br>
             <div id="inscritos">
                 <button class="button" onclick="buscarInscritos()">Inscritos</button>
+            
             </div>
     </main>
-    <button onclick="alterarTema()" class="button-dark-theme" >
-        <img id="icone-alterar-tema" src="imagens/sun.png" alt="Foto icon">
-    </button>
-
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="fechar" id="fechar-modal">&times;</span>
+            <h1>O SETIF 2025</h1>
+            <p>A SETIF 2025 será realizada no dia 10/11/2025</p>
+        </div>
+    </div>
+    <script src="javascript/index.js"></script>
 </body>
 </html>
